@@ -1,0 +1,287 @@
+//
+//other button
+$color: black;
+$color2: pink;
+$radius: .35rem;
+$border-width: 2px;
+$color-bg: white;
+$offset: .5rem;
+$transition: .3s;
+.buttons {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  position: relative;
+  top: 12.5%;
+}
+button {
+  font-weight: 600;
+  border: solid $border-width $color;
+  outline: 0;
+  padding: 1rem 4rem;
+  font-size: 25px !important;
+  z-index: 0;
+  letter-spacing: .08rem;
+  background-color: $color-bg;
+  border-radius: $radius;
+  position: relative;
+  cursor: pointer;
+  margin-left: 30px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color2;
+    z-index: -2 !important;
+    border-radius: $radius;
+    border: solid $border-width $color;
+    transition: all $transition ease-in-out;
+  }
+}
+button.style-1 {
+  &::after {
+    width: 90%;
+    height: 90%;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+      height: 100%;
+      top: $offset;
+      left: $offset;
+    }
+  }
+}
+
+button.style-2 {
+  &::after {
+    top: $offset;
+    left: $offset;
+  }
+
+  &:hover {
+    &::after {
+      width: calc(100% + #{$offset});
+      height: calc(100% + #{$offset});
+
+    }
+  }
+}
+
+button.style-3 {
+  &::after {
+    border: 0;
+    box-shadow: 0px 0px 0px $border-width $color;
+    top: $offset;
+    left: $offset;
+  }
+
+  &:hover {
+    &::after {
+      top: -#{$offset};
+      left: -#{$offset};
+      width: calc(100% + #{$offset} * 2);
+      height: calc(100% + #{$offset} * 2);
+    }
+  }
+}
+
+button.style-4 {
+  &::after {
+    border: 0;
+    box-shadow: 0px 0px 0px $border-width $color;
+    width: calc(100%);
+    height: calc(100%);
+  }
+
+  &:hover {
+    &::after {
+      top: -#{$offset};
+      left: -#{$offset};
+      width: calc(100% + #{$offset} * 2);
+      height: calc(100% + #{$offset} * 2);
+    }
+  }
+}
+
+button.style-5 {
+  &::after {
+    border: 0;
+    box-shadow: 0px 0px 0px $border-width $color;
+    top: $offset;
+    left: $offset;
+  }
+
+  &:hover {
+    background-color: $color2;
+    border: 0;
+    &::after {
+      background-color: $color;
+      box-shadow: none;
+    }
+  }
+}
+// other stuffs
+.index {
+    background-color: #7e4029;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  z-index:-2;
+
+}
+  
+  .index .group-wrapper {
+    background-color: #7e4029;
+    height: 1246.98px;
+    width: 1920px;
+  }
+  
+  .index .group {
+    height: 633px;
+    left: 121px;
+    position: relative;
+    top: 121px;
+    width: 1663px;
+  }
+  
+  .index .overlap {
+    height: 633px;
+    position: relative;
+  }
+  
+  .index .poker-table-green-wrapper {
+    height: 633px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1663px;
+  }
+  
+  .index .poker-table-green {
+    height: 633px;
+  }
+  
+  .index .player {
+    background-image: url(https://cdn.animaapp.com/projects/658119742bf0c3a8e2336e84/releases/658119947ce11022fc6f860a/img/owlcardback2-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 128px;
+    left: 861px;
+    position: absolute;
+    top: 51px;
+    width: 92px;
+  }
+  
+  .index .player-2 {
+    background-image: url(https://cdn.animaapp.com/projects/658119742bf0c3a8e2336e84/releases/658119947ce11022fc6f860a/img/owlcardback2-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 128px;
+    left: 723px;
+    position: absolute;
+    top: 51px;
+    width: 92px;
+  }
+  
+  .index .deck {
+    background-image: url(https://cdn.animaapp.com/projects/658119742bf0c3a8e2336e84/releases/658119947ce11022fc6f860a/img/owlcardback2-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 128px;
+    left: 275px;
+    position: absolute;
+    top: 250px;
+    width: 92px;
+  }
+  
+  .index .algo {
+    background-image: url(https://cdn.animaapp.com/projects/658119742bf0c3a8e2336e84/releases/658119947ce11022fc6f860a/img/owlcardback2-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 128px;
+    left: 861px;
+    position: absolute;
+    top: 455px;
+    width: 92px;
+  }
+  
+  .index .algo-2 {
+    background-image: url(https://cdn.animaapp.com/projects/658119742bf0c3a8e2336e84/releases/658119947ce11022fc6f860a/img/owlcardback2-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 128px;
+    left: 723px;
+    position: absolute;
+    top: 455px;
+    width: 92px;
+  }
+  
+  .index .river {
+    height: 128px;
+    left: 516px;
+    position: absolute;
+    top: 250px;
+    width: 644px;
+  }
+  
+  .index .card {
+    background-image: url(https://cdn.animaapp.com/projects/658119742bf0c3a8e2336e84/releases/658119947ce11022fc6f860a/img/owlcardback2-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 128px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 92px;
+  }
+  
+  .index .card-2 {
+    background-image: url(https://cdn.animaapp.com/projects/658119742bf0c3a8e2336e84/releases/658119947ce11022fc6f860a/img/owlcardback2-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 128px;
+    left: 138px;
+    position: absolute;
+    top: 0;
+    width: 92px;
+  }
+  
+  .index .card-3 {
+    background-image: url(https://cdn.animaapp.com/projects/658119742bf0c3a8e2336e84/releases/658119947ce11022fc6f860a/img/owlcardback2-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 128px;
+    left: 552px;
+    position: absolute;
+    top: 0;
+    width: 92px;
+  }
+  
+  .index .card-4 {
+    background-image: url(https://cdn.animaapp.com/projects/658119742bf0c3a8e2336e84/releases/658119947ce11022fc6f860a/img/owlcardback2-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 128px;
+    left: 276px;
+    position: absolute;
+    top: 0;
+    width: 92px;
+  }
+  
+  .index .card-5 {
+    background-image: url(https://cdn.animaapp.com/projects/658119742bf0c3a8e2336e84/releases/658119947ce11022fc6f860a/img/owlcardback2-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 128px;
+    left: 414px;
+    position: absolute;
+    top: 0;
+    width: 92px;
+  }
+  

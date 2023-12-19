@@ -1,0 +1,76 @@
+.component {
+    height: 633px;
+    width: 1663px;
+  }
+  
+  .component .overlap-group {
+    height: 633px;
+    position: relative;
+  }
+  
+  .component .poker-table-base {
+    height: 633px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1663px;
+  }
+  
+  .component .rectangle {
+    background-color: #a27d44;
+    height: 633px;
+    left: 260px;
+    position: absolute;
+    top: 0;
+    width: 1144px;
+  }
+  
+  .component .ellipse {
+    background-color: #a27d44;
+    border-radius: 259.74px/316.5px;
+    height: 633px;
+    left: 1144px;
+    position: absolute;
+    top: 0;
+    width: 519px;
+  }
+  
+  .component .div {
+    background-color: #a27d44;
+    border-radius: 259.74px/316.5px;
+    height: 633px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 519px;
+  }
+  
+  .component .rectangle-2 {
+    background-color: #1e5c3a;
+    height: 549px;
+    left: 254px;
+    position: absolute;
+    top: 42px;
+    width: 1144px;
+  }
+  
+  .component .ellipse-2 {
+    background-color: #1e5c3a;
+    border-radius: 225.1px/274.3px;
+    height: 549px;
+    left: 1173px;
+    position: absolute;
+    top: 42px;
+    width: 450px;
+  }
+  
+  .component .ellipse-3 {
+    background-color: #1e5c3a;
+    border-radius: 225.1px/274.3px;
+    height: 549px;
+    left: 41px;
+    position: absolute;
+    top: 42px;
+    width: 450px;
+  }
+  
